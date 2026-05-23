@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 struct Produto { // Definindo como os produtos devem ser registrados ao serem guardados
     int id;
@@ -37,6 +38,7 @@ int main(){
     }
 
     do{
+        system("clear");
         printf("Selecione uma das opcoes abaixo:\n\n");
         printf("1. Cadastrar produtos\n");
         printf("2. Listar produtos\n");
@@ -50,7 +52,7 @@ int main(){
                 printf("Digite o nome do produto: ");
                 scanf(" %s", estoque[total_produtos].nome_produto);
 
-                printf("Digite a quantiade que deseja armazenar: ");
+                printf("Digite a quantidade que deseja armazenar: ");
                 scanf(" %d", &estoque[total_produtos].quantidade_estoque);
 
                 printf("Agora, digite o preco do produto: ");
